@@ -28,12 +28,31 @@ http://www.liquibase.org/quickstart.html
 
 1. plugins/ directory contains the Eclipse projects. So checkout this GIT repo from an Eclipse IDE and import the 
 plugins in Your Eclipse workspace. Eclipse IDE can be downloaded from http://download.eclipse.org. The Modeling version will also contain the required dependencies. 
-
 2. Eclipse IDE will automatically compile your projects and if all dependencies are resolved, you should not see any errors in the "Problems" view. 
-
 3. Navigate the org.liquidbase.product project and look for a file named: liquidbase.product
+4. Open this file. It should look like below screenshot
+5. Finally, there are couple of little icons in the upper-right corner. 
+  1. Check all dependencies
+  2. Run/Debug the editor
+  3. 
 
-4. Open this file. It should look like this: 
+
+![alt tag](https://raw.githubusercontent.com/dzonekl/LiquidBaseEditor/master/assets/product01-sc.png)
+
+
+# Contributors 
+
+If you managed to complete the Compile and Build stage, then you are ready to contribute. 
+Some Ideas: 
+
+* Run liquidbase from the editor: (I include a plugin with Liquidbase in Eclipse plugin format, meaning liquidbase is exposed to other plugins and can be called programmatically). 
+
+* Manage JDBC Drivers: Woudn't be cool to browse and download JDBC drivers... We could even keep a repo. of jdbc driver URL's somewhere only, read-it, download, inject in the classpath and boom! 
+
+* Support EMF/EDAPT <--> Liquidbase transitions. See more here http://www.eclipse.org/edapt
+
+
+
 
 
 
