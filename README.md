@@ -34,7 +34,7 @@ plugins in Your Eclipse workspace. Eclipse IDE can be downloaded from http://dow
 5. Finally, there are couple of little icons in the upper-right corner. 
   1. Check all dependencies
   2. Run/Debug the editor
-  3. 
+  3. Export the product as an executable. (win32/MacOSX/Linux-GTK). 
 
 
 ![alt tag](https://raw.githubusercontent.com/dzonekl/LiquidBaseEditor/master/assets/product01-sc.png)
@@ -45,11 +45,21 @@ plugins in Your Eclipse workspace. Eclipse IDE can be downloaded from http://dow
 If you managed to complete the Compile and Build stage, then you are ready to contribute. 
 Some Ideas: 
 
+* Host the binaries: Well what to say... Downloading ready cooked binaries of the editor would be cool for adoption. Anyone can host them? (oh en setting up a Jenkins server to auto-build/test/publish would be neat). 
+
 * Run liquidbase from the editor: (I include a plugin with Liquidbase in Eclipse plugin format, meaning liquidbase is exposed to other plugins and can be called programmatically). 
 
 * Manage JDBC Drivers: Woudn't be cool to browse and download JDBC drivers... We could even keep a repo. of jdbc driver URL's somewhere only, read-it, download, inject in the classpath and boom! 
 
 * Support EMF/EDAPT <--> Liquidbase transitions. See more here http://www.eclipse.org/edapt
+ 
+
+Hope you like it! 
+Christophe Bouhier
+http://modelmoo.blogspot.com
+
+
+
 
 
 
