@@ -6,7 +6,8 @@ An Editor for LiquidBase DB Change Log
 ![alt tag](https://raw.githubusercontent.com/dzonekl/LiquidBaseEditor/master/assets/editor-sc.png)
 * A cool DB Change Log editor - EMF Generated*
 
-It generates this kind of 
+Here is an example of the generated DB Change log, modelled after the liquidbase quick start: 
+http://www.liquibase.org/quickstart.html
 
 '''XML
 <?xml version="1.0" encoding="UTF-8"?>
