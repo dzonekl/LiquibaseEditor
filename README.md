@@ -1,10 +1,10 @@
-LiquidBaseEditor 
+Liquibase Editor 
 ================
 (*Thanks to [EMF](http://www.eclipse.org/emf) this project was created in < 2 hours*)
 
-An Editor for LiquidBase DB Change Log
+An Editor for Liquibase DB Change Log
 
-![alt tag](https://raw.githubusercontent.com/dzonekl/LiquidBaseEditor/master/assets/editor-sc.png)
+![alt tag](https://raw.githubusercontent.com/dzonekl/LiquibaseEditor/master/assets/editor-sc.png)
 *A cool DB Change Log editor - EMF Generated*
 
 Here is an example of the generated DB Change log, modelled after the liquidbase quick start: 
@@ -37,7 +37,7 @@ plugins in Your Eclipse workspace. Eclipse IDE can be downloaded from http://dow
   3. Export the product as an executable. (win32/MacOSX/Linux-GTK). 
 
 
-![alt tag](https://raw.githubusercontent.com/dzonekl/LiquidBaseEditor/master/assets/product01-sc.png)
+![alt tag](https://raw.githubusercontent.com/dzonekl/LiquibaseEditor/master/assets/product01-sc.png)
 
 
 # Contributing 
