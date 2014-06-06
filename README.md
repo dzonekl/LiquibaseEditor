@@ -40,7 +40,7 @@ plugins in Your Eclipse workspace. Eclipse IDE can be downloaded from http://dow
 ![alt tag](https://raw.githubusercontent.com/dzonekl/LiquidBaseEditor/master/assets/product01-sc.png)
 
 
-# Contributors 
+# Contributing 
 
 If you managed to complete the Compile and Build stage, then you are ready to contribute. 
 Some Ideas: 
