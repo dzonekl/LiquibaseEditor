@@ -1,4 +1,14 @@
 LiquidBaseEditor
 ================
 
-An Editor for LiquidBase Change Log
+An Editor for LiquidBase DB Change Log
+
+
+
+
+# Compile and build
+
+
+
+
+
