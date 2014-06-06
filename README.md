@@ -10,6 +10,7 @@ Here is an example of the generated DB Change log, modelled after the liquidbase
 http://www.liquibase.org/quickstart.html
 
 '''XML
+
 <?xml version="1.0" encoding="UTF-8"?>
 <dbchangelog:databaseChangeLog xmlns:dbchangelog="http://www.liquibase.org/xml/ns/dbchangelog">
   <dbchangelog:changeSet author="bob" id="1">
@@ -18,6 +19,7 @@ http://www.liquibase.org/quickstart.html
     </dbchangelog:createTable>
   </dbchangelog:changeSet>
 </dbchangelog:databaseChangeLog>
+
 '''
 
 
