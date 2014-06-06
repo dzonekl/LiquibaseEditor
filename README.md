@@ -45,6 +45,9 @@ plugins in Your Eclipse workspace. Eclipse IDE can be downloaded from http://dow
 If you managed to complete the Compile and Build stage, then you are ready to contribute. 
 Some Ideas: 
 
+* The editor is standard EMF. It has it's known limitations. Form based editing, and producing some imaging like
+a nice iconset for the DBChangeLog model would be great... oh and why not add a graphical editor with [Graphiti](http://www.eclipse.org/graphiti/). 
+
 * Host the binaries: Well what to say... Downloading ready cooked binaries of the editor would be cool for adoption. Anyone can host them? (oh en setting up a Jenkins server to auto-build/test/publish would be neat). 
 
 * Run liquidbase from the editor: (I include a plugin with Liquidbase in Eclipse plugin format, meaning liquidbase is exposed to other plugins and can be called programmatically). 
