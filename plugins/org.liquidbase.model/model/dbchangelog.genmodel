@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.liquidbase.model/src" modelPluginID="org.liquidbase.model"
+    modelName="Dbchangelog" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" runtimePlatform="RCP" importOrganizing="true">
+  <foreignModel>file:/Users/Christophe/Downloads/dbchangelog.xsd</foreignModel>
+  <genPackages prefix="Dbchangelog" basePackage="org.liquibase.xml.ns" resource="XML"
+      disposableProviderFactory="true" loadInitialization="true" literalsInterface="false"
+      ecorePackage="dbchangelog.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dbchangelog.ecore#//FkCascadeActionOptions">
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//FkCascadeActionOptions/CASCADE"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//FkCascadeActionOptions/SETNULL"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//FkCascadeActionOptions/SETDEFAULT"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//FkCascadeActionOptions/RESTRICT"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//FkCascadeActionOptions/NOACTION"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dbchangelog.ecore#//ObjectQuotingStrategy">
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//ObjectQuotingStrategy/LEGACY"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//ObjectQuotingStrategy/QUOTEALLOBJECTS"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//ObjectQuotingStrategy/QUOTEONLYRESERVEDWORDS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dbchangelog.ecore#//OnChangeLogPreconditionErrorOrFail">
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeLogPreconditionErrorOrFail/HALT"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeLogPreconditionErrorOrFail/WARN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dbchangelog.ecore#//OnChangeLogPreconditionOnSqlOutput">
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeLogPreconditionOnSqlOutput/TEST"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeLogPreconditionOnSqlOutput/FAIL"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeLogPreconditionOnSqlOutput/IGNORE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dbchangelog.ecore#//OnChangeSetPreconditionErrorOrFail">
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeSetPreconditionErrorOrFail/HALT"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeSetPreconditionErrorOrFail/WARN"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeSetPreconditionErrorOrFail/CONTINUE"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeSetPreconditionErrorOrFail/MARKRAN"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="dbchangelog.ecore#//OnChangeSetValidationFail">
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeSetValidationFail/HALT"/>
+      <genEnumLiterals ecoreEnumLiteral="dbchangelog.ecore#//OnChangeSetValidationFail/MARKRAN"/>
+    </genEnums>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//BooleanExp"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//BooleanExpMember0"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//BooleanExpMember0Object"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//BooleanExpMember1"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//FkCascadeActionOptionsObject"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//IntegerExp"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//IntegerExpMember0"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//IntegerExpMember1"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//ObjectQuotingStrategyObject"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//OnChangeLogPreconditionErrorOrFailObject"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//OnChangeLogPreconditionOnSqlOutputObject"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//OnChangeSetPreconditionErrorOrFailObject"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//OnChangeSetValidationFailObject"/>
+    <genDataTypes ecoreDataType="dbchangelog.ecore#//PropertyExpression"/>
+    <genClasses ecoreClass="dbchangelog.ecore#//AddAutoIncrementType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddAutoIncrementType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddAutoIncrementType/columnDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddAutoIncrementType/columnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddAutoIncrementType/incrementBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddAutoIncrementType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddAutoIncrementType/startWith"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddAutoIncrementType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AddColumnType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//AddColumnType/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddColumnType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddColumnType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddColumnType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AddDefaultValueType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/columnDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/columnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/defaultValueBoolean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/defaultValueComputed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/defaultValueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/defaultValueNumeric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/defaultValueSequenceNext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddDefaultValueType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AddForeignKeyConstraintType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/baseColumnNames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/baseTableCatalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/baseTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/baseTableSchemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/constraintName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/deferrable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/deleteCascade"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/initiallyDeferred"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/onDelete"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/onUpdate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/referencedColumnNames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/referencedTableCatalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/referencedTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/referencedTableSchemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddForeignKeyConstraintType/referencesUniqueColumn"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AddLookupTableType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/constraintName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/existingColumnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/existingTableCatalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/existingTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/existingTableSchemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/newColumnDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/newColumnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/newTableCatalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/newTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddLookupTableType/newTableSchemaName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AddNotNullConstraintType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddNotNullConstraintType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddNotNullConstraintType/columnDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddNotNullConstraintType/columnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddNotNullConstraintType/defaultNullValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddNotNullConstraintType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddNotNullConstraintType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AddPrimaryKeyType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddPrimaryKeyType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddPrimaryKeyType/columnNames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddPrimaryKeyType/constraintName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddPrimaryKeyType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddPrimaryKeyType/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddPrimaryKeyType/tablespace"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AddUniqueConstraintType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/columnNames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/constraintName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/deferrable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/disabled"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/initiallyDeferred"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AddUniqueConstraintType/tablespace"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AlterSequenceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AlterSequenceType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AlterSequenceType/incrementBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AlterSequenceType/maxValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AlterSequenceType/minValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AlterSequenceType/ordered"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AlterSequenceType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AlterSequenceType/sequenceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AlterSequenceType/startValue"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AndType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AndType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/and"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/or"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/not"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/dbms"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/runningAs"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/changeSetExecuted"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/tableExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/columnExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/sequenceExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/foreignKeyConstraintExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/indexExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/primaryKeyExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/viewExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/tableIsEmpty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/rowCount"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/sqlCheck"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/changeLogPropertyDefined"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/expectedQuotingStrategy"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//AndType/customPrecondition"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AndType/any"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//AppendType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//AppendType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ArgType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ArgType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ChangeLogPropertyDefinedType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeLogPropertyDefinedType/property"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeLogPropertyDefinedType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ChangeSetExecutedType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetExecutedType/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetExecutedType/changeLogFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetExecutedType/id"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ChangeSetType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/validCheckSum"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/preConditions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/tagDatabase"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/changeSetChildren"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/comment"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/createTable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropTable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/createView"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/renameView"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropView"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/insert"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/addColumn"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/sql"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/createProcedure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropProcedure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/sqlFile"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/renameTable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/renameColumn"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropColumn"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/mergeColumns"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/modifyDataType"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/createSequence"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/alterSequence"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropSequence"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/createIndex"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropIndex"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/addNotNullConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropNotNullConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/addForeignKeyConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropForeignKeyConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropAllForeignKeyConstraints"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/addPrimaryKey"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropPrimaryKey"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/addLookupTable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/addAutoIncrement"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/addDefaultValue"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropDefaultValue"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/addUniqueConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/dropUniqueConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/customChange"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/update"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/delete"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/loadData"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/loadUpdateData"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/executeCommand"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/stop"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/rollback"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/any"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//ChangeSetType/modifySql"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/author"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/context"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/dbms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/failOnError"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/logicalFilePath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/objectQuotingStrategy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/onValidationFail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/runAlways"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/runInTransaction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/runOnChange"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ChangeSetType/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ColumnExistsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnExistsType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnExistsType/columnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnExistsType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnExistsType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ColumnType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ColumnType/constraints"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/autoIncrement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/defaultValueBoolean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/defaultValueComputed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/defaultValueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/defaultValueNumeric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/defaultValueSequenceCurrent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/defaultValueSequenceNext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/incrementBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/remarks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/startWith"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/valueBlobFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/valueBoolean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/valueClobFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/valueComputed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/valueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/valueNumeric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/valueSequenceCurrent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType/valueSequenceNext"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ColumnType1">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/defaultValueBoolean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/defaultValueComputed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/defaultValueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/defaultValueNumeric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/header"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType1/type"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ColumnType2">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ColumnType2/constraints"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/autoIncrement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/defaultValueBoolean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/defaultValueComputed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/defaultValueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/defaultValueNumeric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/defaultValueSequenceCurrent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/defaultValueSequenceNext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/incrementBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/remarks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/startWith"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/valueBlobFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/valueBoolean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/valueClobFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/valueComputed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/valueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/valueNumeric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/valueSequenceCurrent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType2/valueSequenceNext"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ColumnType3">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/defaultValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/defaultValueBoolean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/defaultValueComputed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/defaultValueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/defaultValueNumeric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/header"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/index"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType3/type"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ColumnType4">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType4/afterColumn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType4/beforeColumn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ColumnType4/position"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ConstraintsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/checkConstraint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/deferrable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/deleteCascade"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/foreignKeyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/initiallyDeferred"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/nullable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/primaryKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/primaryKeyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/primaryKeyTablespace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/referencedColumnNames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/referencedTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/references"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/unique"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ConstraintsType/uniqueConstraintName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//CreateIndexType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//CreateIndexType/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateIndexType/associatedWith"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateIndexType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateIndexType/indexName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateIndexType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateIndexType/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateIndexType/tablespace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateIndexType/unique"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//CreateProcedureType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/dbms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/procedureName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/relativeToChangelogFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateProcedureType/schemaName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//CreateSequenceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/cycle"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/incrementBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/maxValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/minValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/ordered"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/sequenceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateSequenceType/startValue"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//CreateTableType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//CreateTableType/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateTableType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateTableType/remarks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateTableType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateTableType/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateTableType/tablespace"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//CreateViewType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateViewType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateViewType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateViewType/replaceIfExists"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateViewType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CreateViewType/viewName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//CustomChangeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//CustomChangeType/param"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CustomChangeType/class"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CustomChangeType/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//CustomPreconditionType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//CustomPreconditionType/param"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//CustomPreconditionType/className"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DatabaseChangeLogType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DatabaseChangeLogType/property"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DatabaseChangeLogType/preConditions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DatabaseChangeLogType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//DatabaseChangeLogType/changeSet"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//DatabaseChangeLogType/include"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//DatabaseChangeLogType/includeAll"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DatabaseChangeLogType/logicalFilePath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DatabaseChangeLogType/objectQuotingStrategy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DatabaseChangeLogType/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DbmsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DbmsType/type"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DeleteType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DeleteType/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//DeleteType/where"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//DeleteType/whereParams"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DeleteType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DeleteType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DeleteType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/addAutoIncrement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/addColumn"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/addDefaultValue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/addForeignKeyConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/addLookupTable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/addNotNullConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/addPrimaryKey"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/addUniqueConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/alterSequence"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/and"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/changeLogPropertyDefined"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/changeSetExecuted"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/column"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/columnExists"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DocumentRoot/comment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/constraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/createIndex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/createProcedure"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/createSequence"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/createTable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/createView"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/customChange"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/customPrecondition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/databaseChangeLog"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dbms"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/delete"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropAllForeignKeyConstraints"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropColumn"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropDefaultValue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropForeignKeyConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropIndex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropNotNullConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropPrimaryKey"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropProcedure"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropSequence"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropTable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropUniqueConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/dropView"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/executeCommand"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/expectedQuotingStrategy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/foreignKeyConstraintExists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/indexExists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/insert"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/loadData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/loadUpdateData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/mergeColumns"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/modifyDataType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/not"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/or"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/param"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/primaryKeyExists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/renameColumn"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/renameTable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/renameView"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/rollback"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/rowCount"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/runningAs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/sequenceExists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/sql"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/sqlCheck"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/sqlFile"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/stop"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/tableExists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/tableIsEmpty"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/tagDatabase"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/update"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/viewExists"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//DocumentRoot/whereParams"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropAllForeignKeyConstraintsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropAllForeignKeyConstraintsType/baseTableCatalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropAllForeignKeyConstraintsType/baseTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropAllForeignKeyConstraintsType/baseTableSchemaName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropColumnType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropColumnType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropColumnType/columnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropColumnType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropColumnType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropDefaultValueType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropDefaultValueType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropDefaultValueType/columnDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropDefaultValueType/columnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropDefaultValueType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropDefaultValueType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropForeignKeyConstraintType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropForeignKeyConstraintType/baseTableCatalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropForeignKeyConstraintType/baseTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropForeignKeyConstraintType/baseTableSchemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropForeignKeyConstraintType/constraintName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropIndexType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropIndexType/associatedWith"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropIndexType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropIndexType/indexName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropIndexType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropIndexType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropNotNullConstraintType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropNotNullConstraintType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropNotNullConstraintType/columnDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropNotNullConstraintType/columnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropNotNullConstraintType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropNotNullConstraintType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropPrimaryKeyType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropPrimaryKeyType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropPrimaryKeyType/constraintName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropPrimaryKeyType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropPrimaryKeyType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropProcedureType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropProcedureType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropProcedureType/procedureName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropProcedureType/schemaName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropSequenceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropSequenceType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropSequenceType/incrementBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropSequenceType/maxValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropSequenceType/minValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropSequenceType/ordered"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropSequenceType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropSequenceType/sequenceName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropSequenceType/startValue"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropTableType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropTableType/cascadeConstraints"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropTableType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropTableType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropTableType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropUniqueConstraintType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropUniqueConstraintType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropUniqueConstraintType/constraintName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropUniqueConstraintType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropUniqueConstraintType/tableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropUniqueConstraintType/uniqueColumns"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//DropViewType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropViewType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropViewType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//DropViewType/viewName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ExecuteCommandType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//ExecuteCommandType/arg"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ExecuteCommandType/executable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ExecuteCommandType/os"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ExpectedQuotingStrategyType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ExpectedQuotingStrategyType/strategy"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ForeignKeyConstraintExistsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ForeignKeyConstraintExistsType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ForeignKeyConstraintExistsType/foreignKeyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ForeignKeyConstraintExistsType/foreignKeyTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ForeignKeyConstraintExistsType/schemaName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//IncludeAllType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IncludeAllType/filter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IncludeAllType/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IncludeAllType/relativeToChangelogFile"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IncludeAllType/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//IncludeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IncludeType/file"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IncludeType/relativeToChangelogFile"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IncludeType/anyAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//IndexExistsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IndexExistsType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IndexExistsType/columnNames"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IndexExistsType/indexName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IndexExistsType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//IndexExistsType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//InsertType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dbchangelog.ecore#//InsertType/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//InsertType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//InsertType/dbms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//InsertType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//InsertType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//LoadDataType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadDataType/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//LoadDataType/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadDataType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadDataType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadDataType/file"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadDataType/quotchar"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadDataType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadDataType/separator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadDataType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//LoadUpdateDataType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//LoadUpdateDataType/column"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/file"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/primaryKey"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/quotchar"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/separator"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//LoadUpdateDataType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//MergeColumnsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//MergeColumnsType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//MergeColumnsType/column1Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//MergeColumnsType/column2Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//MergeColumnsType/finalColumnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//MergeColumnsType/finalColumnType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//MergeColumnsType/joinString"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//MergeColumnsType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//MergeColumnsType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ModifyDataTypeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifyDataTypeType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifyDataTypeType/columnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifyDataTypeType/newDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifyDataTypeType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifyDataTypeType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ModifySqlType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifySqlType/modifySqlChildren"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ModifySqlType/replace"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ModifySqlType/regExpReplace"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ModifySqlType/prepend"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//ModifySqlType/append"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifySqlType/applyToRollback"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifySqlType/context"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ModifySqlType/dbms"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//NotType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//NotType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/and"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/or"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/not"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/dbms"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/runningAs"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/changeSetExecuted"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/tableExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/columnExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/sequenceExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/foreignKeyConstraintExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/indexExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/primaryKeyExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/viewExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/tableIsEmpty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/rowCount"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/sqlCheck"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/changeLogPropertyDefined"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/expectedQuotingStrategy"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//NotType/customPrecondition"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//NotType/any"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//OrType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//OrType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/and"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/or"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/not"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/dbms"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/runningAs"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/changeSetExecuted"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/tableExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/columnExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/sequenceExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/foreignKeyConstraintExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/indexExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/primaryKeyExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/viewExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/tableIsEmpty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/rowCount"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/sqlCheck"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/changeLogPropertyDefined"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/expectedQuotingStrategy"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//OrType/customPrecondition"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//OrType/any"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ParamType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType/value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType/valueBoolean"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType/valueComputed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType/valueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType/valueNumeric"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType/valueSequenceCurrent"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType/valueSequenceNext"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ParamType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType1/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType1/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType1/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ParamType2">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType2/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ParamType2/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//PreConditionsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/and"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/or"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/not"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/dbms"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/runningAs"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/changeSetExecuted"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/tableExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/columnExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/sequenceExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/foreignKeyConstraintExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/indexExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/primaryKeyExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/viewExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/tableIsEmpty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/rowCount"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/sqlCheck"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/changeLogPropertyDefined"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/expectedQuotingStrategy"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType/customPrecondition"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType/onError"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType/onErrorMessage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType/onFail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType/onFailMessage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType/onSqlOutput"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//PreConditionsType1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType1/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/and"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/or"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/not"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/dbms"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/runningAs"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/changeSetExecuted"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/tableExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/columnExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/sequenceExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/foreignKeyConstraintExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/indexExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/primaryKeyExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/viewExists"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/tableIsEmpty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/rowCount"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/sqlCheck"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/changeLogPropertyDefined"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/expectedQuotingStrategy"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//PreConditionsType1/customPrecondition"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType1/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType1/onError"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType1/onErrorMessage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType1/onFail"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType1/onFailMessage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PreConditionsType1/onSqlOutput"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//PrependType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PrependType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//PrimaryKeyExistsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PrimaryKeyExistsType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PrimaryKeyExistsType/primaryKeyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PrimaryKeyExistsType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PrimaryKeyExistsType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//PropertyType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PropertyType/context"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PropertyType/dbms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PropertyType/file"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PropertyType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//PropertyType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//RegExpReplaceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RegExpReplaceType/replace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RegExpReplaceType/with"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//RenameColumnType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameColumnType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameColumnType/columnDataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameColumnType/newColumnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameColumnType/oldColumnName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameColumnType/remarks"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameColumnType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameColumnType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//RenameTableType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameTableType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameTableType/newTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameTableType/oldTableName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameTableType/schemaName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//RenameViewType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameViewType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameViewType/newViewName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameViewType/oldViewName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RenameViewType/schemaName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ReplaceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ReplaceType/replace"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ReplaceType/with"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//RollbackType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RollbackType/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RollbackType/changeSetChildren"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RollbackType/comment"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/createTable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropTable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/createView"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/renameView"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropView"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/insert"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/addColumn"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/sql"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/createProcedure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropProcedure"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/sqlFile"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/renameTable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/renameColumn"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropColumn"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/mergeColumns"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/modifyDataType"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/createSequence"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/alterSequence"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropSequence"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/createIndex"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropIndex"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/addNotNullConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropNotNullConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/addForeignKeyConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropForeignKeyConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropAllForeignKeyConstraints"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/addPrimaryKey"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropPrimaryKey"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/addLookupTable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/addAutoIncrement"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/addDefaultValue"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropDefaultValue"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/addUniqueConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/dropUniqueConstraint"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/customChange"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/update"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/delete"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/loadData"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/loadUpdateData"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/executeCommand"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/stop"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//RollbackType/rollback"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RollbackType/any"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RollbackType/changeSetAuthor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RollbackType/changeSetId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RollbackType/changeSetPath"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//RowCountType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RowCountType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RowCountType/expectedRows"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RowCountType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RowCountType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//RunningAsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//RunningAsType/username"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//SequenceExistsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SequenceExistsType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SequenceExistsType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SequenceExistsType/sequenceName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//SqlCheckType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlCheckType/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlCheckType/expectedResult"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//SqlFileType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlFileType/dbms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlFileType/encoding"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlFileType/endDelimiter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlFileType/path"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlFileType/relativeToChangelogFile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlFileType/splitStatements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlFileType/stripComments"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//SqlType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlType/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlType/comment"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlType/dbms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlType/endDelimiter"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlType/splitStatements"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//SqlType/stripComments"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//StopType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//StopType/mixed"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//TableExistsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//TableExistsType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//TableExistsType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//TableExistsType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//TableIsEmptyType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//TableIsEmptyType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//TableIsEmptyType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//TableIsEmptyType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//TagDatabaseType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//TagDatabaseType/tag"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//UpdateType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//UpdateType/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//UpdateType/column"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//UpdateType/where"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//UpdateType/whereParams"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//UpdateType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//UpdateType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//UpdateType/tableName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ValidCheckSumType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ValidCheckSumType/mixed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ValidCheckSumType/comment"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//ViewExistsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ViewExistsType/catalogName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ViewExistsType/schemaName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//ViewExistsType/viewName"/>
+    </genClasses>
+    <genClasses ecoreClass="dbchangelog.ecore#//WhereParamsType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute dbchangelog.ecore#//WhereParamsType/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference dbchangelog.ecore#//WhereParamsType/param"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

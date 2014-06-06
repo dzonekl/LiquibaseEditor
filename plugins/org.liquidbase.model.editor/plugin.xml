@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.applications"
+         id="DbchangelogEditorAdvisorApplication">
+      <!-- @generated dbchangelog -->
+      <application>
+         <run class="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisor$Application"/>
+      </application>
+   </extension>
+
+   <extension point="org.eclipse.ui.perspectives">
+      <!-- @generated dbchangelog -->
+      <perspective
+            name="%_UI_Perspective_label"
+            class="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisor$Perspective"
+            id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorPerspective">
+      </perspective>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands">
+      <!-- @generated dbchangelog -->
+      <command
+            name="%_UI_Menu_OpenURI_label"
+            description="%_UI_Menu_OpenURI_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorOpenURICommand"/>
+      <command
+            name="%_UI_Menu_Open_label"
+            description="%_UI_Menu_Open_description"
+            categoryId="org.eclipse.ui.category.file"
+            id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorOpenCommand"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.bindings">
+      <!-- @generated dbchangelog -->
+      <key
+            commandId="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorOpenURICommand"
+            sequence="M1+U"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            commandId="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorOpenCommand"
+            sequence="M1+O"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated dbchangelog -->
+      <actionSet
+            label="%_UI_DbchangelogEditorAdvisor_ActionSet_label"
+            visible="true"
+            id="DbchangelogEditorAdvisorActionSet">
+         <action
+               label="%_UI_Menu_About_label"
+               class="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisor$AboutAction"
+               menubarPath="help/additions"
+               id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorAboutAction"/>
+         <action
+               label="%_UI_Menu_OpenURI_label"
+               definitionId="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorOpenURICommand"
+               class="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisor$OpenURIAction"
+               menubarPath="file/additions"
+               id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorOpenURIAction"/>
+         <action
+               label="%_UI_Menu_Open_label"
+               definitionId="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorOpenCommand"
+               class="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisor$OpenAction"
+               menubarPath="file/additions"
+               id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorAdvisorOpenAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <!-- @generated dbchangelog -->
+      <actionSet
+            label="%_UI_DbchangelogModelWizard_ActionSet_label"
+            visible="true"
+            id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogActionBarContributorActionSet">
+         <action
+               label="%_UI_DbchangelogModelWizard_label"
+               class="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogActionBarContributor$NewAction"
+               menubarPath="file/new/additions"
+               id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogActionBarContributorNewAction"/>
+      </actionSet>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated dbchangelog -->
+      <editor
+            id="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditorID"
+            name="%_UI_DbchangelogEditor_label"
+            icon="icons/full/obj16/DbchangelogModelFile.gif"
+            extensions="dbchangelog"
+            class="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogEditor"
+            contributorClass="org.liquibase.xml.ns.dbchangelog.presentation.DbchangelogActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
