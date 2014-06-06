@@ -7,7 +7,7 @@ An Editor for Liquibase DB Change Log
 ![alt tag](https://raw.githubusercontent.com/dzonekl/LiquibaseEditor/master/assets/editor-sc.png)
 *A cool DB Change Log editor - EMF Generated*
 
-Here is an example of the generated DB Change log, modelled after the liquidbase quick start: 
+Here is an example of the generated DB Change log, modelled after the liquibase quick start: 
 http://www.liquibase.org/quickstart.html
 
 ```XML
@@ -29,7 +29,7 @@ http://www.liquibase.org/quickstart.html
 1. plugins/ directory contains the Eclipse projects. So checkout this GIT repo from an Eclipse IDE and import the 
 plugins in Your Eclipse workspace. Eclipse IDE can be downloaded from http://download.eclipse.org. The Modeling version will also contain the required dependencies. 
 2. Eclipse IDE will automatically compile your projects and if all dependencies are resolved, you should not see any errors in the "Problems" view. 
-3. Navigate the org.liquidbase.product project and look for a file named: liquidbase.product
+3. Navigate the org.liquibase.product project and look for a file named: liquibase.product
 4. Open this file. It should look like below screenshot
 5. Finally, there are couple of little icons in the upper-right corner. 
   1. Check all dependencies
@@ -50,11 +50,11 @@ a nice iconset for the DBChangeLog model would be great... oh and why not add a 
 
 * Host the binaries: Well what to say... Downloading ready cooked binaries of the editor would be cool for adoption. Anyone can host them? (oh en setting up a Jenkins server to auto-build/test/publish would be neat). 
 
-* Run liquidbase from the editor: (I include a plugin with Liquidbase in Eclipse plugin format, meaning liquidbase is exposed to other plugins and can be called programmatically). 
+* Run liquibase from the editor: (I include a plugin with Liquibase in Eclipse plugin format, meaning liquibase is exposed to other plugins and can be called programmatically). 
 
 * Manage JDBC Drivers: Woudn't be cool to browse and download JDBC drivers... We could even keep a repo. of jdbc driver URL's somewhere only, read-it, download, inject in the classpath and boom! 
 
-* Support EMF/EDAPT <--> Liquidbase transitions. See more here http://www.eclipse.org/edapt
+* Support EMF/EDAPT <--> Liquibase transitions. See more here http://www.eclipse.org/edapt
  
 
 Hope you like it! 
