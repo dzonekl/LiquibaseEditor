@@ -1,5 +1,6 @@
-LiquidBaseEditor
+LiquidBaseEditor 
 ================
+(*Thanks to [EMF](http://www.eclipse.org) this project was created in < 2 hours*)
 
 An Editor for LiquidBase DB Change Log
 
